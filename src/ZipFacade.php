@@ -1,4 +1,6 @@
 <?php namespace houdunwang\zip;
+use houdunwang\framework\build\Facade;
+
 /** .-------------------------------------------------------------------
  * |  Software: [HDCMS framework]
  * |      Site: www.hdcms.com
@@ -7,9 +9,7 @@
  * |    WeChat: aihoudun
  * | Copyright (c) 2012-2019, www.houdunwang.com. All Rights Reserved.
  * '-------------------------------------------------------------------*/
-use hdphp\kernel\ServiceFacade;
-
-class ZipFacade extends ServiceFacade {
+class ZipFacade extends Facade {
 	public static function getFacadeAccessor() {
 		return 'Zip';
 	}
