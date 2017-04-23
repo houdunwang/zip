@@ -1,5 +1,4 @@
 <?php namespace houdunwang\zip;
-use houdunwang\framework\build\Provider;
 
 /** .-------------------------------------------------------------------
  * |  Software: [HDCMS framework]
@@ -9,16 +8,24 @@ use houdunwang\framework\build\Provider;
  * |    WeChat: aihoudun
  * | Copyright (c) 2012-2019, www.houdunwang.com. All Rights Reserved.
  * '-------------------------------------------------------------------*/
-class ZipProvider extends Provider {
-	//延迟加载
-	public $defer = true;
+use houdunwang\framework\build\Provider;
 
-	public function boot() {
-	}
+class ZipProvider extends Provider
+{
+    //延迟加载
+    public $defer = true;
 
-	public function register() {
-		$this->app->single( 'Zip', function () {
-			return new Zip();
-		} );
-	}
+    public function boot()
+    {
+    }
+
+    public function register()
+    {
+        $this->app->single(
+            'Zip',
+            function () {
+                return new Zip();
+            }
+        );
+    }
 }
