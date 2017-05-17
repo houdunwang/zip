@@ -1,7 +1,6 @@
 {
   "name": "houdunwang/zip",
   "description": "压缩与解压组件",
-  "type": "project",
   "keywords": [
     "houdunwang",
     "hdphp",
