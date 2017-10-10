@@ -21,11 +21,8 @@ class ZipProvider extends Provider
 
     public function register()
     {
-        $this->app->single(
-            'Zip',
-            function () {
-                return new Zip();
-            }
-        );
+        $this->app->single('Zip', function () {
+            return new Zip();
+        });
     }
 }
